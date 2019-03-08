@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<input type="text" id="inputNumber" />
+<button type="button" onclick="addNumber()">Add</button>
+<button type="button" onclick="clickDisplay()">Display</button>
+<script>
+    let varr = [];
+    let a;
+    let b;
+    let i;
+    function addNumber() {
+        a = document.getElementById("inputNumber").value;
+        varr.push(a);
+        document.getElementById("inputNumber").value = "";
+    }
+    function clickDisplay() {
+        for(i=0;i<varr.length;i++)
+            document.write("Element " +i+" = "+varr[i]+"<br>");
+    }
+
+</script>
+<body>
+
+</body>
+</html>
